@@ -57,13 +57,13 @@ def mainMenu
      when "3"
 
        puts "
-	    4: weather
+	   4a: weather
 	    5: Internet speed test
             6: Banner printing
             7: calculator"
        print "==> "
        case gets.strip
-         when "4"
+         when "4a"
            print "inter Your city ==> "
            city = gets
            system "curl http://wttr.in/#{city}"
