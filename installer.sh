@@ -21,9 +21,12 @@ if [ "$checkdl" = "0" ];then
 	echo -e "\t\tbarname ha nasb shodan!!! [IR]"
 	echo "Hala Barname bayad be dastorat ezafe beshe!![IR]"
 	if [ "$sudo" = "0" ];then  #If Its == Ture , You Are Sudo
+		sudo gem install colorize
 		sudo cp funli /bin
 		sudo chmod +x /bin/rcode
 	else 
+		echo "Shoma bayad 'colorize' ro nasb konid ke dastresi root mikhad!!! ba admin system dar tamas bashid"
+		echo -e "baraye nasb az in dastor estefade konid!!!\n\t sudo gem install colorize "
 		PATH=$PATH:$PWD
 		export PATH
 		echo "$PATH" >> ~/.bashrc
