@@ -50,3 +50,4 @@ else
 fi
 echo "Movaffagh bashid!!![IR]"
 ## Github.com/dearmad/funli
+## Installer Coded By Https://Pouya-abbasian
