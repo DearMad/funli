@@ -26,13 +26,13 @@ if [ $sudo = "0" ];then
 			sudo cp funli /bin
 			sudo chmod +x /bin/rcode
 		else 
-			echo "Shoma bayad 'colorize' ro nasb konid ke dastresi root mikhad!!! ba admin system dar tamas bashid"
-			echo -e "baraye nasb az in dastor estefade konid!!!\n\t sudo gem install colorize "
+			echo "Shoma bayad 'colorize' ro nasb konid ke dastresi root mikhad!!! ba admin system dar tamas bashid [IR]"
+			echo -e "baraye nasb az in dastor estefade konid!!!\n\t sudo gem install colorize [IR] "
 			PATH=$PATH:$PWD
 			export PATH
 			echo "$PATH" >> ~/.bashrc
 		fi
-		echo "Khob Barname ba movafaghiat Nasb shod!!!"
+		echo "Khob Barname ba movafaghiat Nasb shod!!! [IR]"
 		echo "Harvaght ke ba barname kar dashtin az dastoor 'funli' Mitonin estefade konid! [IR]"
 	else
 		if [ "$checkdl" = "100" ] ; then
@@ -41,13 +41,12 @@ if [ $sudo = "0" ];then
 		else
 			echo "Unknow ERROR!!!!"
 			echo "shoma bayad aval barname hara nasb konid va sepas funli dar dastoorat ezafe konid va sepas funli ro farakhani bekonid [IR]"
-	
 		fi
 	fi
 else
-	echo "Shoma aslan sudo nistin va bayad be admin begin barname haye zir ro dar system nasb kone ya shomaro sudo kone!!!"
+	echo "Shoma aslan sudo nistin va bayad be admin begin barname haye zir ro dar system nasb kone ya shomaro sudo kone!!![IR]"
 	echo "ruby sl gem cowsay bsdgames mplayer curl figlet"
 	echo "And type this command : 'sudo gem install colorize'"
 fi
-echo "Movaffagh bashid!!!"
+echo "Movaffagh bashid!!![IR]"
 ## Github.com/dearmad/funli
