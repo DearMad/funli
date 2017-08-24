@@ -19,35 +19,36 @@ if [ $sudo = "0" ];then
 	pacmngdl
 	checkdl=$?
 	if [ "$checkdl" = "0" ];then
-		echo -e "\t\tbarname ha nasb shodan!!! [IR]i"
-		echo "Hala Barname bayad be dastorat ezafe beshe!![IR]"
+		echo -e "\t\tall programms are installed successfully!!!"
+		echo "Now the programms should be added without any problem!!"
 		if [ "$sudo" = "0" ];then  #If Its == Ture , You Are Sudo
 			sudo gem install colorize
 			sudo cp funli /bin
 			sudo chmod +x /bin/rcode
 		else 
-			echo "Shoma bayad 'colorize' ro nasb konid ke dastresi root mikhad!!! ba admin system dar tamas bashid [IR]"
-			echo -e "baraye nasb az in dastor estefade konid!!!\n\t sudo gem install colorize [IR] "
+			echo "you need to install 'colorize' which needs root access!!! contact your system admin"
+			echo -e "use this command to install!!!\n\t sudo gem install colorize "
 			PATH=$PATH:$PWD
 			export PATH
 			echo "$PATH" >> ~/.bashrc
 		fi
-		echo "Khob Barname ba movafaghiat Nasb shod!!! [IR]"
-		echo "Harvaght ke ba barname kar dashtin az dastoor 'funli' Mitonin estefade konid! [IR]"
+		echo "the programm was installed successfully"
+		echo "you can use the 'funli' command whenever you need to use the programm"
 	else
 		if [ "$checkdl" = "100" ] ; then
-			echo "Motmaen Bashid Ke internet shoma vasle va makhazen shoma update hast [IR]"
+			echo "Make sure you have a working connection and your your repositories are up to date"
 			exit
 		else
 			echo "Unknow ERROR!!!!"
-			echo "shoma bayad aval barname hara nasb konid va sepas funli dar dastoorat ezafe konid va sepas funli ro farakhani bekonid [IR]"
+			echo "you should first install the programms, then add funli to your commands and then recall funli"
 		fi
 	fi
 else
-	echo "Shoma aslan sudo nistin va bayad be admin begin barname haye zir ro dar system nasb kone ya shomaro sudo kone!!![IR]"
+	echo "you are not a sudo user. ask your administrator to install these programms or make you a sudo user!!!"
 	echo "ruby sl gem cowsay bsdgames mplayer curl figlet"
 	echo "And type this command : 'sudo gem install colorize'"
 fi
-echo "Movaffagh bashid!!![IR]"
+echo "Have Fun!!!"
 ## Github.com/dearmad/funli
 ## Installer Coded By Https://Pouya-abbasian
+## translation by https://gitlab.com/mhmdreza_abedi
